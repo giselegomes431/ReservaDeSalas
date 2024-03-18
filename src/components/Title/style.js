@@ -5,15 +5,19 @@ const styles = StyleSheet.create({
         color:"#FFFFFF",
         fontSize:30,
         textAlign:"center",
+        paddingTop:10
     },
+
     textTitle2: {
         color:"#FFFFFF",
         fontSize:50,
         textAlign:"center",
     },
+
     iconTitle: {
-        paddingTop:20,
+        paddingTop:10,
         paddingLeft:50,
+        paddingBottom:30
     }
 });
 

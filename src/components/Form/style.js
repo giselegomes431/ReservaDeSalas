@@ -3,21 +3,16 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
     formContext: {
         backgroundColor:"#FFFFFF",
-        borderTopLeftRadius:30,
-        borderTopRightRadius:30,
-        borderBottomLeftRadius:30,
-        borderBottomRightRadius:30,
         paddingTop:20,
-        marginTop:30,
         width:"85%",
-        height:"60%"
+        height:"55%",
+        borderRadius:30,
     },
 
     textForm: {
         color:"#0805A3",
         fontSize:22,
         paddingLeft:20,
-        marginTop:10,
     },
 
     input: {
@@ -27,7 +22,6 @@ const styles = StyleSheet.create({
         height:50,
         margin:12,
         paddingLeft:15,
-        marginTop:20,
         marginLeft:16
     },
 
@@ -40,8 +34,9 @@ const styles = StyleSheet.create({
         paddingTop:14,
         paddingBottom:14,
         marginLeft:16,
-        margin:30,
+        margin:25,
     },
+    
     buttonText: {
         color:"#FFFFFF",
         fontSize:22,
@@ -49,13 +44,25 @@ const styles = StyleSheet.create({
 
     button: {
         paddingBottom:20
-
     },
 
     buttonCancelar: {
         color:"#0805A3",
         fontSize:15,
-        paddingLeft:135,
+        paddingLeft:138,
+        textDecorationLine:"underline"
+    },
+
+    errorMessage: {
+        fontSize:10,
+        color:"red",
+        fontWeight:"bold",
+        paddingLeft:10,
+        paddingTop:10
+    },
+
+    box: {
+        flexDirection:"row",
     }
 });
 

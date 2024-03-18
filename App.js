@@ -1,6 +1,7 @@
-import { StyleSheet, Text, View, ImageBackground, Image } from 'react-native';
+import { StyleSheet, View, ImageBackground} from 'react-native';
 import Title from './src/components/Title';
 import Form from './src/components/Form';
+import Buttons from './src/components/Buttons';
 
 export default function App() {
   return (
@@ -9,9 +10,9 @@ export default function App() {
       source={require('./assets/Fundo.png')}
       style={styles.imageBackground}
       >
+        <Buttons/>
         <Title/>
         <Form/>
-    
       </ImageBackground>
     </View>
   );
@@ -20,7 +21,8 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    flexDirection: "column"
+    flexDirection: "column",
+    height:"auto"
   },
 
   imageBackground: {
