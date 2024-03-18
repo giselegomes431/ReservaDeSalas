@@ -29,11 +29,11 @@ const styles = StyleSheet.create({
         borderRadius:15,
         alignItems:"center",
         justifyContent:"center",
-        width:"90%",
+        width:"50%",
         backgroundColor:"#211DFF",
         paddingTop:14,
         paddingBottom:14,
-        marginLeft:16,
+        marginLeft:80,
         margin:25,
     },
     

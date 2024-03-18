@@ -4,8 +4,7 @@ import {View,
         TextInput,
         TouchableOpacity,
         Vibration,
-        Pressable,
-        Keyboard} from "react-native"
+        } from "react-native"
 import styles from "./style";
 
 export default function Form(){
@@ -30,7 +29,6 @@ export default function Form(){
 
     return(
         <View style={styles.formContext}>
-            <Pressable onPress={Keyboard.dismiss}>
             <View style={styles.box}>
                 <Text style={styles.textForm}>Nome:</Text>
                 <Text style={styles.errorMessage}>{errorMessage}</Text>
@@ -66,7 +64,6 @@ export default function Form(){
                 onChangeText={setTelefone}
                 value={telefone}
                 />
-            </Pressable>
 
             <TouchableOpacity
                 style={styles.buttonCadastrar}

@@ -1,11 +1,12 @@
-import { StyleSheet, View, ImageBackground} from 'react-native';
+import { StyleSheet, View, ImageBackground, Pressable,
+  Keyboard} from 'react-native';
 import Title from './src/components/Title';
 import Form from './src/components/Form';
 import Buttons from './src/components/Buttons';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <Pressable onPress={Keyboard.dismiss} style={styles.container}>
       <ImageBackground
       source={require('./assets/Fundo.png')}
       style={styles.imageBackground}
@@ -14,7 +15,7 @@ export default function App() {
         <Title/>
         <Form/>
       </ImageBackground>
-    </View>
+    </Pressable>
   );
 }
 
